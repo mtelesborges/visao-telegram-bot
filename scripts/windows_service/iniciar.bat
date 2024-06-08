@@ -1,0 +1,1 @@
+python .\helpers\windows_service\iniciar.py && python .\helpers\windows_service\configurar.py

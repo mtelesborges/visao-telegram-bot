@@ -1,0 +1,1 @@
+python .\helpers\windows_service\criar.py

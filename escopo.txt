@@ -1,0 +1,117 @@
+3h - Tipo de Jornada de Trabalho:
+	id
+	nome
+	status (ativo/inativo)
+	id do usuário de cadastro
+	data de cadastro
+	id do usuário da última atualização
+	data da última atualização
+
+3h - Jornada de Trabalho:
+	id
+	nome
+	id do tipo de jornada de trabalho
+	sequencia
+	status (ativo/inativo)
+	id do usuário de cadastro
+	data de cadastro
+	id do usuário da última atualização
+	data da última atualização
+
+3h - Cadastro de usuários:
+	id
+	código do usuário
+	nome do usuário
+	tipo de usuário (ADMINSTRADOR/ANALISTA/COLABORADOR)
+	senha
+	pin de autenticação
+	primeiro acesso?
+	status (ativo/inativo)
+	id do usuário de cadastro
+	data de cadastro
+	id do usuário da última atualização
+	data da última atualização
+
+3h - Vinculo Usuário x Tipo de Jornada x Dia da Semana:
+	id
+	id do usuário
+	id do tipo de jornada
+	dia da semana (SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO)
+	id do usuário de cadastro
+	data de cadastro
+	id do usuário da última atualização
+	data da última atualização
+
+3h - Registro do ponto:
+	id
+	id do usuário
+	id da jornada de trabalho
+	localização
+	ponto com alteração manual?
+	data/hora de registro
+	
+	observações:
+		- buscar localização do navegador
+
+3h - Correção de ponto:
+	id
+	id do usuário (código do funcionário)
+	id do ponto com problema
+	data/hora corrigida
+	id do usuário de cadastro
+	data de cadastro
+	id do usuário da última atualização
+	data da última atualização
+
+3h - Registro de faltas:
+	id
+	id do usuário (código do funcionário)
+	id do ponto
+	falta trabalhada?
+	id do usuário de cadastro
+	data de cadastro
+	id do usuário da última atualização
+	data da última atualização
+	
+3h - Marcação de férias:
+	id
+	id do usuário (código do funcionário)
+	data de início
+	data de fim
+	id do usuário de cadastro
+	data de cadastro
+	id do usuário da última atualização
+	data da última atualização
+	
+5h - Relatório dos pontos registrados em csv:
+	código do funcionário
+	ponto 1
+	ponto 2
+	ponto 3
+	ponto 4
+	ponto n
+	
+	observações:
+		- possibilitar filtro por período
+		- possibilitar filtro por funcionário
+		- somente usuários ADMINSTRADOR ou ANALISTA
+
+5h - Login:
+	codigo do funcionário
+	senha
+
+	observações: 
+		- como não teremos conexão com e-mail, para recuperar a senha será necessário que um administrador faça isto
+		- se for o primeiro acesso, criar tela para o usuário criar uma nova senha
+		- permitir login via qrcode
+
+5h - Recuperar senha:
+	codigo do funcionário
+	nova senha
+	
+	observações:
+		- somente usuários ADMINSTRADOR ou ANALISTA
+
+5h - Configuração do ambiente:
+	- configuração do servidor
+	- configuração da aplicação

@@ -1,0 +1,9 @@
+/var/
+/libs/
+/data/
+/**/__pycache__/
+.vscode/
+.venv/
+/artifacts/
+.idea/
+/cache/

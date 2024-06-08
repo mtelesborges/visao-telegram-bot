@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "visio-telegram-bot"
+version = "0.1.0"
+description = ""
+authors = ["Mailson Teles Borges <mtelesborges@gmail.com>"]
+readme = "README.md"
+packages = [{include = "visio_telegram_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "*"
+dbf = "*"
+requests = "*"
+flake8 = "*"
+autopep8 = "*"
+black = "*"
+python-dateutil = "*"
+geopy = "*"
+pytesseract = "*"
+pillow = "*"
+install = "*"
+python-telegram-bot = {extras = ["job-queue"], version = "*"}
+enum34 = "*"
+sqlalchemy = "^2.0.4"
+
+
+[tool.poetry.group.dev.dependencies]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
